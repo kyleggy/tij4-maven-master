@@ -22,10 +22,10 @@ public class FibonacciThread implements Runnable {
     }
 
     public static void main(String[] args) {
-        Thread thread = new Thread(new FibonacciThread(20));
-        thread.start();
-        Thread thread1 = new Thread(new FibonacciThread(10));
-        thread1.start();
+        for (int i = 10; i < 15; i ++) {
+            Thread thread2 = new Thread(new FibonacciThread(i));
+            thread2.start();
+        }
     }
 
 }
