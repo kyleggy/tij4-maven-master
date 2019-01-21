@@ -1,4 +1,4 @@
-package concurrency.exercise;
+package concurrency.exercise.execrise10;
 
 import concurrency.exercise.execrise05.FibonacciCallable;
 
@@ -23,7 +23,7 @@ public class Execrise10 {
 
     public static void main(String[] args) {
         Execrise10 execrise10 = new Execrise10();
-        Future<Integer> results = execrise10.runTask(28);
+        Future<Integer> results = execrise10.runTask(3);
         try {
             System.out.println(results.get());
         } catch (InterruptedException e) {

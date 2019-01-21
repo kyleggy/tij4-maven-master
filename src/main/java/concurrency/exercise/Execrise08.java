@@ -17,7 +17,7 @@ public class Execrise08 {
             threads[i].start();
         }
         System.out.println("Waiting for LiftOff");
-        TimeUnit.MILLISECONDS.sleep(100);
+        TimeUnit.MILLISECONDS.sleep(1);
 
     }
 

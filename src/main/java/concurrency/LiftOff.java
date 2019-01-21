@@ -18,6 +18,12 @@ public class LiftOff implements Runnable {
   public void run() {
     while(countDown-- > 0) {
       System.out.print(status());
+      //The below code change is for the execrise 08
+//      try {
+//        TimeUnit.SECONDS.sleep(1);
+//      } catch (InterruptedException e) {
+//        e.printStackTrace();
+//      }
       Thread.yield();
 
     }
